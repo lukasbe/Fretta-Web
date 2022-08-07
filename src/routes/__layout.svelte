@@ -54,6 +54,7 @@
 	}
 
 	main{
+		margin-inline: 1rem;
 		font-size: 1.5rem;
 	}
 </style>
