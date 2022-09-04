@@ -8,6 +8,6 @@ pub fn parse_markdown_to_json_blocks(markdown: &str) -> JsValue {
         Ok(blocks) => {
             JsValue::from_serde(&blocks).unwrap()
         },
-        Err(err) =>  JsValue::from_str(format!("{{error: {}}}", err).as_str())
+        Err(err) =>  JsValue::from_str("{ \"error\": \"An error occurred, exception handling to be implemented\"}")
     }
 }
